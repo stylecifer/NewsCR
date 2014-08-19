@@ -62,5 +62,5 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
+	<footer class="entry-meta"><span class="tag-links"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="tag">Portada</a></span></footer>
 </article><!-- #post-## -->
