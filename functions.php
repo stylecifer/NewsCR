@@ -194,6 +194,15 @@ function twentyfourteen_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Nav Post', 'twentyfourteen' ),
+		'id'            => 'sidebar-4',
+		'description'   => __( 'To create navegations post bar.', 'twentyfourteen' ),
+		'before_widget' => '<div class="nav-menu">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<span class="widget-title">',
+		'after_title'   => '</span>',
+	) );
 }
 add_action( 'widgets_init', 'twentyfourteen_widgets_init' );
 
